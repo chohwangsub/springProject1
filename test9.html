@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ 
+ <script>
+ /* 올바른 변수명 
+        (1) 영문 (only)
+		(2) 영문+숫자 (숫자+영문 -> fail)
+		(3) 영문+일부특수문자('_ or $') ( 특수문자+영문 -> ok )
+		    ex) var _eng = 100; (o)
+		(4) 한글 (only)
+ 
+    잘못된 변수명
+		(1) 예약어(내장되어있는 시스템 이름) - (only 예약어)  
+		    ex) var var = "aa"; (x)
+			ex) var var1 = "aa"; (o)
+		(2) 숫자로 시작되는 변수명
+		    ex) var 1test = "aa"; (x)
+		(3) 불허된 특수문자가 포함된 변수명
+ */
+ var $aa = "zzzzzz";
+ document.write($aa);
+ document.write("<hr>");
+  
+ var var1 = "var1 ok ~~";
+ document.write(var1);
+ document.write("<hr>");
+  
+ var aa  = "aa";
+ document.write(aa);
+ document.write("<hr>");
+ 
+ var aa1 = "aa1";
+ document.write(aa1);
+ document.write("<hr>");
+ 
+ var aa_ = "aa_";
+ document.write(aa_);
+ document.write("<hr>");
+
+// var aa- = "aa-";       // (x)
+// document.write(aa-);
+// document.write("<hr>"); 
+
+//  var var = "var";      // (x)
+//  document.write(var);
+//  document.write("<hr>");
+	
+	var var1 = "var1";      // (o)
+	document.write(var1);
+	document.write("<hr>");
+ 
+//	var 1var = "1var";      // (x)  숫자로 시작되는 변수명
+//	document.write(1var);
+//	document.write("<hr>");
+	
+	var 학원명 = "하이미디어";  // (o)
+	document.write(학원명);
+	document.write("<hr>");
+ 
+ </script>
+ 
+ <body>
+  
+ </body>
+</html>
